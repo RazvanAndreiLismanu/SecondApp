@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
     //MARK: actions
     
     @IBAction func setResetBtn(sender: UIButton) {
-        nombreLbl.text="Hola desconocido"
+        imgView.image=UIImage(named: "Imagen predeterminada")!
     }
     @IBAction func seleccionarImagen(sender: UITapGestureRecognizer) {
         nombreTxt.resignFirstResponder()
