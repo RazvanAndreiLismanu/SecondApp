@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -48,8 +49,13 @@
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Imagen predeterminada" translatesAutoresizingMaskIntoConstraints="NO" id="ik2-LV-xfW">
                                         <rect key="frame" x="0.0" y="117" width="320" height="320"/>
                                         <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="ADu-LZ-mZG"/>
+                                            <constraint firstAttribute="height" constant="320" id="WQS-7a-Y6w"/>
+                                            <constraint firstAttribute="width" secondItem="ik2-LV-xfW" secondAttribute="height" multiplier="1:1" id="foa-iQ-dsZ"/>
+                                        </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="GA6-vh-T5D" appends="YES" id="0cP-ES-Iyb"/>
+                                            <outletCollection property="gestureRecognizers" destination="m24-J9-dgH" appends="YES" id="I7Q-Za-kHW"/>
                                         </connections>
                                     </imageView>
                                 </subviews>
@@ -69,7 +75,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="GA6-vh-T5D"/>
+                <tapGestureRecognizer id="m24-J9-dgH">
+                    <connections>
+                        <action selector="seleccionarImagen:" destination="BYZ-38-t0r" id="RDm-TP-e8C"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="259" y="306"/>
         </scene>
