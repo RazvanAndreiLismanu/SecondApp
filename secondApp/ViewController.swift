@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     //MARK: properties
     
@@ -16,11 +16,29 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nombreLbl: UILabel!
     
+    @IBOutlet weak var imgView: UIImageView!
     
     //MARK: actions
     
     @IBAction func setResetBtn(sender: UIButton) {
         nombreLbl.text="Nombre ??"
+    }
+    @IBAction func seleccionarImagen(sender: UITapGestureRecognizer) {
+        nombreTxt.resignFirstResponder()
+        let imagePickCtrl = UIImagePickerController()
+        imagePickCtrl.sourceType = .PhotoLibrary
+        imagePickCtrl.delegate = self
+        presentViewController(imagePickCtrl,animated:true,completion:nil)
+        
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) { dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let selectedImage=info[UIImagePickerControllerOriginalImage] as! UIImage
+        imgView.image=selectedImage
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     //MARK: UITextFieldDelegate

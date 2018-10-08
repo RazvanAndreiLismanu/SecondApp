@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-JK-Ag7">
-                                <rect key="frame" x="20" y="80" width="560" height="106"/>
+                                <rect key="frame" x="20" y="80" width="560" height="437"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hola desconocido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atk-8G-lUT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola desconocido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atk-8G-lUT">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -37,7 +37,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyY-Au-vPi">
-                                        <rect key="frame" x="0.0" y="75" width="39" height="31"/>
+                                        <rect key="frame" x="0.0" y="75" width="39" height="30"/>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -45,11 +45,14 @@
                                             <action selector="setResetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JsM-xj-rq2"/>
                                         </connections>
                                     </button>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Imagen predeterminada" translatesAutoresizingMaskIntoConstraints="NO" id="ik2-LV-xfW">
+                                        <rect key="frame" x="0.0" y="117" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="GA6-vh-T5D" appends="YES" id="0cP-ES-Iyb"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="560" id="2by-7f-c9f"/>
-                                    <constraint firstAttribute="height" constant="106" id="aDi-8C-74f"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.083716728271861052" green="0.38041705267856452" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,13 +63,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgView" destination="ik2-LV-xfW" id="IKM-vP-uxV"/>
                         <outlet property="nombreLbl" destination="atk-8G-lUT" id="SL8-0S-UbU"/>
                         <outlet property="nombreTxt" destination="bdN-yV-H2b" id="fyN-kw-aW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GA6-vh-T5D"/>
             </objects>
             <point key="canvasLocation" x="259" y="306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Imagen predeterminada" width="150" height="150"/>
+    </resources>
 </document>
