@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-JK-Ag7">
-                                <rect key="frame" x="20" y="80" width="560" height="437"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-JK-Ag7">
+                                <rect key="frame" x="7" y="107" width="560" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola desconocido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atk-8G-lUT">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
@@ -58,6 +58,10 @@
                                             <outletCollection property="gestureRecognizers" destination="m24-J9-dgH" appends="YES" id="I7Q-Za-kHW"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="q3h-ju-QwB" customClass="EvaluacionControl" customModule="secondApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="449" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -81,10 +85,10 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="259" y="306"/>
+            <point key="canvasLocation" x="243" y="318"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Imagen predeterminada" width="150" height="150"/>
+        <image name="Imagen predeterminada" width="540" height="540"/>
     </resources>
 </document>
