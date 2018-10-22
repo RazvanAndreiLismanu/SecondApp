@@ -14,6 +14,7 @@
 		0D6805E5215BE26D002DB302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6805E3215BE26D002DB302 /* LaunchScreen.storyboard */; };
 		0D6805F0215BE26D002DB302 /* secondAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6805EF215BE26D002DB302 /* secondAppTests.swift */; };
 		2979C409217E14BA009C8D2A /* EvaluacionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979C408217E14BA009C8D2A /* EvaluacionControl.swift */; };
+		29A614E2217E328900D54CB4 /* Amigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A614E1217E328900D54CB4 /* Amigo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0D6805EF215BE26D002DB302 /* secondAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondAppTests.swift; sourceTree = "<group>"; };
 		0D6805F1215BE26D002DB302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2979C408217E14BA009C8D2A /* EvaluacionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluacionControl.swift; sourceTree = "<group>"; };
+		29A614E1217E328900D54CB4 /* Amigo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Amigo.swift; path = ../secondApp/Amigo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		0D6805EE215BE26D002DB302 /* secondAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				29A614E1217E328900D54CB4 /* Amigo.swift */,
 				0D6805EF215BE26D002DB302 /* secondAppTests.swift */,
 				0D6805F1215BE26D002DB302 /* Info.plist */,
 			);
@@ -203,6 +206,7 @@
 				2979C409217E14BA009C8D2A /* EvaluacionControl.swift in Sources */,
 				0D6805DD215BE26D002DB302 /* ViewController.swift in Sources */,
 				0D6805DB215BE26D002DB302 /* AppDelegate.swift in Sources */,
+				29A614E2217E328900D54CB4 /* Amigo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

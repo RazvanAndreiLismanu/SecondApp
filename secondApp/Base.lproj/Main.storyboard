@@ -73,6 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="controlEvaluacion" destination="q3h-ju-QwB" id="QF1-0g-ath"/>
                         <outlet property="imgView" destination="ik2-LV-xfW" id="IKM-vP-uxV"/>
                         <outlet property="nombreLbl" destination="atk-8G-lUT" id="SL8-0S-UbU"/>
                         <outlet property="nombreTxt" destination="bdN-yV-H2b" id="fyN-kw-aW1"/>
