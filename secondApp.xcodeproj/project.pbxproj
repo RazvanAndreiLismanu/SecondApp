@@ -16,6 +16,7 @@
 		0DACB2B6218D9D18004D8225 /* EvaluacionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACB2B5218D9D18004D8225 /* EvaluacionControl.swift */; };
 		0DACB2B8218DB4B6004D8225 /* Amigo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACB2B7218DB4B6004D8225 /* Amigo.swift */; };
 		0DACB2BA218DB8B4004D8225 /* AmigoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACB2B9218DB8B4004D8225 /* AmigoTableViewCell.swift */; };
+		0DACB2BC218DC3B3004D8225 /* AmigoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACB2BB218DC3B3004D8225 /* AmigoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		0DACB2B5218D9D18004D8225 /* EvaluacionControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvaluacionControl.swift; sourceTree = "<group>"; };
 		0DACB2B7218DB4B6004D8225 /* Amigo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amigo.swift; sourceTree = "<group>"; };
 		0DACB2B9218DB8B4004D8225 /* AmigoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewCell.swift; sourceTree = "<group>"; };
+		0DACB2BB218DC3B3004D8225 /* AmigoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmigoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				0D6805E1215BE26D002DB302 /* Assets.xcassets */,
 				0D6805E3215BE26D002DB302 /* LaunchScreen.storyboard */,
 				0D6805E6215BE26D002DB302 /* Info.plist */,
+				0DACB2BB218DC3B3004D8225 /* AmigoTableViewController.swift */,
 			);
 			path = secondApp;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DACB2B6218D9D18004D8225 /* EvaluacionControl.swift in Sources */,
+				0DACB2BC218DC3B3004D8225 /* AmigoTableViewController.swift in Sources */,
 				0DACB2BA218DB8B4004D8225 /* AmigoTableViewCell.swift in Sources */,
 				0D6805DD215BE26D002DB302 /* ViewController.swift in Sources */,
 				0D6805DB215BE26D002DB302 /* AppDelegate.swift in Sources */,
