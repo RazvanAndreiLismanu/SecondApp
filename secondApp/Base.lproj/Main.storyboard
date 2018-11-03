@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-JK-Ag7">
-                                <rect key="frame" x="20" y="80" width="560" height="437"/>
+                                <rect key="frame" x="20" y="80" width="560" height="493"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola desconocido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atk-8G-lUT">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
@@ -58,6 +58,10 @@
                                             <outletCollection property="gestureRecognizers" destination="m24-J9-dgH" appends="YES" id="I7Q-Za-kHW"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="hLh-th-gp9" customClass="EvaluacionControl" customModule="secondApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="449" width="240" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -69,6 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="controlEvaluacion" destination="hLh-th-gp9" id="jrc-Ue-9hY"/>
                         <outlet property="imgView" destination="ik2-LV-xfW" id="IKM-vP-uxV"/>
                         <outlet property="nombreLbl" destination="atk-8G-lUT" id="SL8-0S-UbU"/>
                         <outlet property="nombreTxt" destination="bdN-yV-H2b" id="fyN-kw-aW1"/>

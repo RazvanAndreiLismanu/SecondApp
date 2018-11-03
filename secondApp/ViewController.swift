@@ -15,8 +15,11 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
     @IBOutlet weak var nombreTxt: UITextField!
     
     @IBOutlet weak var nombreLbl: UILabel!
-    
+   
     @IBOutlet weak var imgView: UIImageView!
+    
+    @IBOutlet weak var controlEvaluacion: EvaluacionControl!
+    
     
     //MARK: actions
     
@@ -24,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
         nombreTxt.text="";
         nombreLbl.text="Hola desconocido";
         imgView.image=UIImage(named: "Imagen predeterminada")!
+        controlEvaluacion.gradoAfinidad = 0
     }
     @IBAction func seleccionarImagen(sender: UITapGestureRecognizer) {
         nombreTxt.resignFirstResponder()
