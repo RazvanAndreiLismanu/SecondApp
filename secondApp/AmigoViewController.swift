@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class AmigoViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    //MARK: navigacion
+    
+    @IBAction func cancelar(sender: UIBarButtonItem) { dismissViewControllerAnimated(true, completion: nil)
+    }
     
     //MARK: properties
-    
     @IBOutlet weak var nombreTxt: UITextField!
-    
-    @IBOutlet weak var nombreLbl: UILabel!
    
     @IBOutlet weak var imgView: UIImageView!
     
@@ -25,7 +27,6 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
     
     @IBAction func setResetBtn(sender: UIButton) {
         nombreTxt.text="";
-        nombreLbl.text="Hola desconocido";
         imgView.image=UIImage(named: "Imagen predeterminada")!
         controlEvaluacion.gradoAfinidad = 0
     }
@@ -55,10 +56,7 @@ class ViewController: UIViewController, UITextFieldDelegate,UIImagePickerControl
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        nombreLbl.text = "Hola " + nombreTxt.text!
-    }
-    
+       
     override func viewDidLoad() {
         super.viewDidLoad()
         nombreTxt.delegate=self;

@@ -10,6 +10,7 @@ import UIKit
 
 class AmigoTableViewController: UITableViewController {
     
+    
     var amigos = [Amigo]()
     
     override func viewDidLoad() {

@@ -16,4 +16,5 @@ class AmigoTableViewCell: UITableViewCell {
     @IBOutlet weak var evaluacion: EvaluacionControl!    
     @IBOutlet weak var nombre: UILabel!
     
+        
 }
